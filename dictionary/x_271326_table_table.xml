@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Table Table" max_length="40" name="x_271326_table_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="request" label="Stage" mandatory="true" max_length="80" name="x_58872_needit_stage" type="string">
+            <choice>
+                <element label="Request" sequence="0" value="request"/>
+                <element label="Approval" sequence="1" value="approval"/>
+                <element label="Procurement" sequence="2" value="procurement"/>
+                <element label="Completed" sequence="3" value="completed"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="draft" label="State" mandatory="true" max_length="40" name="x_58872_needit_state" type="string">
+            <choice>
+                <element label="Draft" sequence="0" value="draft"/>
+                <element label="Manager Approval" sequence="1" value="manager approval"/>
+                <element label="Procurement manager approval" sequence="2" value="procurement manager approval"/>
+                <element label="Awaiting vendor" sequence="3" value="awaiting vendor"/>
+                <element label="Procurement approval" sequence="4" value="procurement approval"/>
+                <element label="Requestor approval" sequence="5" value="requestor approval"/>
+                <element label="Completed" sequence="6" value="completed"/>
+            </choice>
+        </element>
+    </element>
+</database>
